@@ -1,0 +1,29 @@
+.header-container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:aliceblue;
+    padding: 0 20px;
+}
+
+.categories-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-link, auth-link{
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.auth-link{
+    background-color:blueviolet;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
