@@ -4,6 +4,7 @@ import {useParams} from 'react-router-dom'
 import {db} from '../../config/firebaseConfig'
 //need some functions from firestore
 import {collection, getDocs, query, where} from 'firebase/firestore'
+import ArticleCard from './../../components/ArticleCard/ArticleCard';
 
 function CategoryArticle() {
     const {categoryName} = useParams();
@@ -43,7 +44,7 @@ function CategoryArticle() {
             articles?.length === 0?
             <p>No {categoryName} articles </p>
             :
-            articles?.map(item => <p key={item.id}>{item.title}</p>)
+            articles?.map(item => <ArticleCard article={item}/>)
         }
     </div>
   )

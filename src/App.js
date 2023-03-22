@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage/HomePage';
 import Header from './components/Header/Header';
 import Auth from './pages/Auth/Auth';
 import CategoryArticle from './pages/CategoryArticle/CategoryArticle';
+import AddArticle from './pages/AddArticle/AddArticle';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/auth' element={<Auth/>}/>
           <Route path='/category/:categoryName' element={<CategoryArticle/>}/>
+          <Route path='/addarticle' element={<AddArticle/>}/>
         </Routes>
       </BrowserRouter>
     </div>

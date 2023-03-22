@@ -1,4 +1,4 @@
-.header-container{
+.header-container {
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -7,19 +7,19 @@
     padding: 0 20px;
 }
 
-.categories-container{
+.categories-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
 }
 
-.nav-link, auth-link{
+.nav-link, .auth-link {
     text-decoration: none;
     margin: 0 10px;
 }
 
-.auth-link{
+.auth-link {
     background-color:blueviolet;
     color: white;
     padding: 8px 16px;
