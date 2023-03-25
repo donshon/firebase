@@ -26,7 +26,7 @@ function Banner() {
                         ...item.data()
                     }
                 ))
-                console.log(articles)
+                //console.log(articles)
                 //store in state
                 setMainArticle(articles[0])
                 setOtherArticles(articles.splice(1))
