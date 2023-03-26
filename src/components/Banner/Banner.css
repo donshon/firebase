@@ -15,6 +15,7 @@
     justify-content:flex-end;
     padding:0 0 20px 20px;
     color:white;
+    text-decoration: none;
  }
 
  .other-articles-container {
@@ -33,6 +34,7 @@
     background-size: cover;
     background-position: center;
     padding:0 0 10px 10px;
+    text-decoration: none;
 }
 
 .banner-info {

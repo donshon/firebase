@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import './ArticleDetails.css'
 import { useParams } from 'react-router-dom'
-import {db, auth} from '../../config/firebaseConfig'
+import {db} from '../../config/firebaseConfig'
 import {getDoc, doc} from 'firebase/firestore'
 import Likes from './../../components/Likes/Likes';
+import Comments from '../../components/Comments/Comments'
+
 
 function ArticleDetails() {
     //get the id
@@ -44,6 +46,7 @@ function ArticleDetails() {
             <p className="article-description">{article?.paragraphTwo}</p>
             <p className="article-description">{article?.paragraphThree}</p>
         </div>
+        <Comments articleId={articleId}/>
     </div>
   )
 }
